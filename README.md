@@ -1,3 +1,5 @@
+[![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/x8NHWen6gy)
+[![PayPal](https://img.shields.io/badge/PayPal-Donate%20Me-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/paypalme/ModukaMondal)
 # System Cleaner Pro v5.0.0 🚀
 
 **System Cleaner Pro** is a powerful, cross-platform system optimization and maintenance utility built with Python and a modern Tkinter graphical user interface. Designed for both Windows and Linux environments, it provides deep system cleaning, privacy tools, storage management, and advanced automation to keep your operating system running at peak performance.
