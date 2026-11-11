@@ -1,25 +1,30 @@
-# System Cleaner Pro
+# System Cleaner Pro v4.7.0
 
-A lightweight and efficient multi-platform utility tool designed to clean system caches, remove temporary files, and optimize overall system performance.
+**System Cleaner Pro** is an advanced, high-performance system optimization and maintenance utility designed for both **Linux** and **Windows** environments. It features automated temporary file cleanup, live background RAM cleaning, CPU boost capabilities, and system maintenance tools wrapped in a sleek, lightweight graphical interface.
 
-## Features
-- Safely clean temporary files and application caches.
-- Fast and reliable system performance optimization.
-- **Windows Support:** Digitally signed executable (`.exe`) for verified security.
-- **Linux Support:** Compiled binary ready for Linux environments.
+---
 
-## Download & Installation
-1. Navigate to the repository files above.
-2. **For Windows:** Download `SystemCleanerPro.exe` and run it directly.
-3. **For Linux:** Download the binary for your Linux environment.
+## 🚀 What's New in v4.7.0
+* **Cross-Platform Support:** Fully optimized builds for modern Linux distributions (via WSL2/Ubuntu) and Windows systems.
+* **Isolated Build Pipeline:** Upgraded virtual environment compilation (`venv` with strict dependency handling) ensuring stable binary generation without hardware-specific kernel compilation conflicts (`evdev` decoupled).
+* **Enhanced Performance Tools:** Integrated live background memory management, disk defragmentation/TRIM support, and targeted junk file purging (including heavy application caches like AutoCAD).
+* **Robust UI Integration:** Full native Tkinter GUI support for seamless user interaction across platforms.
 
-## How to Use
-- Run the executable or binary directly on your respective operating system to optimize system performance and clear unwanted caches.
+---
 
-## Community & Support
-Got questions, feedback, or need help? Join our community server:
-- **[Join our Discord Server](https://discord.gg/x8NHWen6gy)**
+## 📂 Project Structure
+* `dist/` - Contains the compiled standalone production binaries (`SystemCleanerPro` for Linux / `.exe` for Windows).
+* `system_cleaner_pro.py` - Core application source code.
+* `bulk_uninstaller.py` - Bulk software removal utility module.
+* `clipboard_monitor.py` - Background clipboard tracking and management module.
+* `advanced_tools.py` - Advanced system optimization and diagnostic tools.
+* `build_linux.sh` - Automated shell script for building the Linux distribution package.
 
-## Support the Project
-If you find System Cleaner Pro helpful and want to support its development, you can make a contribution via PayPal:
-- **[Donate via PayPal](https://paypal.me/ModukaMondal)**
+---
+
+## 🛠️ Quick Start & Installation
+
+### For Linux (WSL2 / Ubuntu):
+1. Ensure build prerequisites are installed:
+   ```bash
+   sudo apt update && sudo apt install -y python3-tk python3-dev python3.14-venv build-essential
