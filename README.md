@@ -1,12 +1,17 @@
 # System Cleaner Pro
 
-A lightweight and efficient custom Windows utility tool designed to clean system caches, remove temporary files, and optimize overall performance.
+A lightweight and efficient multi-platform utility tool designed to clean system caches, remove temporary files, and optimize overall system performance.
 
 ## Features
-- Clean temporary files and app caches safely.
+- Safely clean temporary files and application caches.
 - Fast and reliable system performance optimization.
-- Digitally signed executable (`.exe`) for verified security.
+- **Windows Support:** Digitally signed executable (`.exe`) for verified security.
+- **Linux Support:** Compiled binary ready for Linux environments.
+
+## Download & Installation
+1. Navigate to the repository files above.
+2. **For Windows:** Download `SystemCleanerPro.exe` and run it directly.
+3. **For Linux:** Download the `SystemCleanerPro` binary for your Linux environment.
 
 ## How to Use
-1. Download the latest `SystemCleanerPro.exe` from this repository.
-2. Run the application directly on your Windows system to optimize performance.
+- Run the executable or binary directly on your respective operating system to optimize system performance and clear unwanted caches.
