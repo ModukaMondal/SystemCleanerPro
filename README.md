@@ -1,30 +1,46 @@
-# System Cleaner Pro v4.7.0
+# System Cleaner Pro v5.0.0 🚀
 
-**System Cleaner Pro** is an advanced, high-performance system optimization and maintenance utility designed for both **Linux** and **Windows** environments. It features automated temporary file cleanup, live background RAM cleaning, CPU boost capabilities, and system maintenance tools wrapped in a sleek, lightweight graphical interface.
-
----
-
-## 🚀 What's New in v4.7.0
-* **Cross-Platform Support:** Fully optimized builds for modern Linux distributions (via WSL2/Ubuntu) and Windows systems.
-* **Isolated Build Pipeline:** Upgraded virtual environment compilation (`venv` with strict dependency handling) ensuring stable binary generation without hardware-specific kernel compilation conflicts (`evdev` decoupled).
-* **Enhanced Performance Tools:** Integrated live background memory management, disk defragmentation/TRIM support, and targeted junk file purging (including heavy application caches like AutoCAD).
-* **Robust UI Integration:** Full native Tkinter GUI support for seamless user interaction across platforms.
+**System Cleaner Pro** is a powerful, cross-platform system optimization and maintenance utility built with Python and a modern Tkinter graphical user interface. Designed for both Windows and Linux environments, it provides deep system cleaning, privacy tools, storage management, and advanced automation to keep your operating system running at peak performance.
 
 ---
 
-## 📂 Project Structure
-* `dist/` - Contains the compiled standalone production binaries (`SystemCleanerPro` for Linux / `.exe` for Windows).
-* `system_cleaner_pro.py` - Core application source code.
-* `bulk_uninstaller.py` - Bulk software removal utility module.
-* `clipboard_monitor.py` - Background clipboard tracking and management module.
-* `advanced_tools.py` - Advanced system optimization and diagnostic tools.
-* `build_linux.sh` - Automated shell script for building the Linux distribution package.
+## 🌟 What's New in v5.0.0 (Key Features & Upgrades)
+
+Version 5.0.0 introduces several breakthrough modules and security enhancements, expanding far beyond standard cleanup utilities:
+
+* **🧩 Browser Extensions Manager (`browser_extensions.py`)**: Safely inspect, audit, manage, and clean installed browser extensions and plugins across supported web browsers.
+* **🔒 Secure Drive Wiper (`drive_wiper.py`)**: Advanced cryptographic and secure wiping utilities designed to permanently erase residual data and unallocated space, ensuring complete privacy.
+* **🎬 Filmora & Media Cache Cleaner (`filmora_cleaner.py`)**: Dedicated high-performance cache and temporary file cleanup module specifically targeting heavy video editing suites like Wondershare Filmora and media render caches.
+* **📂 Advanced Storage Explorer (`storage_explorer.py`)**: Deep-dive disk space analyzer that categorizes large directories, hidden logs, and redundant files, giving users granular control over local storage.
+* **✍️ Enterprise-Grade Code Signing**: Windows binaries (`.exe`) are now digitally signed with a validated self-signed code-signing certificate (`Status: Valid`), ensuring executable integrity and trust.
+* **🛡️ Robust QA Test Framework**: Expanded automated QA test suites covering cross-platform regression, memory stability, UI state persistence, and feature integration tests.
 
 ---
 
-## 🛠️ Quick Start & Installation
+## 🛠️ Core Features (Carried Over & Optimized from v4.x)
 
-### For Linux (WSL2 / Ubuntu):
-1. Ensure build prerequisites are installed:
-   ```bash
-   sudo apt update && sudo apt install -y python3-tk python3-dev python3.14-venv build-essential
+* **🧹 Comprehensive System Cleaner**: Scans and flushes temporary directories, system logs, application caches (including AutoCAD and general temp files), and browser caches.
+* **📦 Bulk Software Uninstaller (`bulk_uninstaller.py`)**: Streamlines the removal of unwanted applications and lingering registry/directory residues.
+* **📋 Clipboard Monitor & Manager (`clipboard_monitor.py`)**: Securely tracks and manages clipboard history with options for quick clearing and privacy protection.
+* **⚙️ Advanced System Tools (`advanced_tools.py`)**: Includes background RAM optimization, CPU performance profiles, disk defragmentation, and SSD TRIM maintenance support.
+* **🔄 Cross-Platform Architecture**: Seamlessly compiled and native-supported on both **Windows 11** (via batch scripts) and **Linux / WSL2 Ubuntu** (via shell automation scripts).
+
+---
+
+## 📂 Project Directory Structure
+
+```text
+System_Cleaner_Pro_v5.0.0/
+├── system_cleaner_pro.py        # Main Application Core & GUI
+├── advanced_tools.py            # Advanced System Optimization Modules
+├── bulk_uninstaller.py          # Bulk Application Uninstaller
+├── clipboard_monitor.py         # Clipboard Activity Tracker
+├── browser_extensions.py        # Browser Extension & Plugin Manager
+├── drive_wiper.py               # Secure Drive & Free Space Wiper
+├── filmora_cleaner.py           # Media Cache & Filmora Cleaner
+├── storage_explorer.py          # Deep Storage & Disk Space Explorer
+├── qa_*.py                      # Comprehensive Automated QA Test Suites
+├── build_linux.sh               # Linux Build & Environment Automation
+├── build_windows.bat            # Windows PyInstaller Compilation Script
+├── sign_windows.bat             # Windows Digital Code-Signing Script
+└── README.md                    # Project Documentation
